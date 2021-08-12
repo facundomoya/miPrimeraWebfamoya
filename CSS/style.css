@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap');
+/* Esto es un comentario de una sola linea */
+/* reseteamos los margenes y paddings */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* selector de etiqueta */
+nav {
+  background: #333;
+  padding: 15px 25px;
+  position: fixed;
+  width: 100%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0px 5px;
+  padding: 10px 10px;
+}
+
+nav a:hover {
+  background: tomato;
+}
+/* selector de id */
+#parte1 {
+  padding: 25px;
+}
+
+/* selector de clase */
+.contenedor {
+  margin: 15px 25px;
+}
+.titulo {
+  background: #00aae4;
+  padding: 80px;
+  text-align: center;
+}
+
+.titulo h1 {
+  color: white;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: lightblue;
+  text-align: center;
+  margin: 15px 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+hr {
+  margin: 15px 0px;
+}
+
+ol,
+ul {
+  list-style-position: inside;
+  text-align: center;
+}
+
+footer{
+  background: #00aae4;
+  text-align: center;
+  color: white;
+  padding: 15px;
+
+}
+/* selector de etiqueta */
+footer p{
+  font-size: smaller;
+}
+/* selector de clases div position */
+
+.position1{
+  background: darkblue;
+  color: white;
+  padding: 0px 0px 80px 0px;
+  margin: 15px 1200px 0px 50px;
+  width: 100px;
+  height: 30px;
+  position: relative;
+  top: 40px;
+  left: 30px;
+  z-index: -1;
+}
+.position2{
+  background: red;
+  color: white;
+  padding: 0px 0px 80px 0px;
+  margin:  0px 1200px 0px 50px;
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  left: 20px;
+  top: 0px;
+}
+.position3{
+  background: green;
+  color: white;
+  padding: 0px 0px 80px 0px;
+  margin:  0px 0px 40px 50px;
+  width: 100px;
+  height: 30px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+table{
+  border: 1px solid darkblue;
+}
+td,th{
+  padding: 10px 5px;
+}
+
+/* nth-child(odd) toma los hijos impares */
+/* nth-child(even) toma los hijos pares */
+
+tr:nth-child(odd){
+  background: #a9a9a9;
+}
+.descuento{
+  background: rgba(255, 255, 0, 0.637);
+}
+#padrePosicionado{
+    position: relative;
+    border: 1px solid red;
+
+}
+
+#pruebaSticky{
+  background: grey;
+  position: sticky;
+  top: 50px;
+}
+
+/* estilos del formulario */
+
+form{
+  border: 1px solid grey;
+  padding: 15px;
+  width: 75%;
+  
+}
+
+form div{
+  margin: 15px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* flexbox  */
+.columna{
+  
+  padding: 5px;
+}
+
+.contenedorPadre{
+
+  display: flex;
+}
+
+label{
+  margin: 10px 0px;
+}
+
+.lineal{
+  display: inline;
+}
+
+.centrar{
+  display: flex; /* le agregamos siempre al padre */
+  flex-direction: column;
+  align-items: center ;
+}
+
+button{
+  background: lightskyblue;
+  text-decoration: none;
+  width: 100%;
+  border: 0;
+  padding: 10px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 5px 5px rgb(135, 146, 250) ;
+  position: relative;
+}
+
+button:hover{
+  background: rgb(135, 194, 250);
+  color:white;
+  box-shadow: 0px 2px 5px rgb(135, 146, 250) ;
+  top: 5px;
+}
